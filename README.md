@@ -10,3 +10,5 @@ Analyzing data received from Colorado Board of employee Tom on congressional ele
 5.Winning candidate and winning county based on the previous steps  
 
 ## Election-Audit Results:
+
+- Total Votes casted in the congressional election 369,711
