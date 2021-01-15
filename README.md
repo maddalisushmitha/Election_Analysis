@@ -12,3 +12,69 @@ Analyzing data received from Colorado Board of employee Tom on congressional ele
 ## Election-Audit Results:
 
 - Total Votes casted in the congressional election 369,711
+
+ ![TV](https://github.com/maddalisushmitha/Election_Analysis/blob/main/Images%20for%20readme/Total_Votes.png)
+
+- Number of votes and the percentage of total votes for each county
+
+### Code:
+     #for loop to get the county from the county dictionary.  
+      for county_name in county_votes:  
+        #Retrieve the county vote count.  
+        votes_of_county = county_votes.get(county_name)  
+        #Calculate the percentage of votes for the county.  
+        vote_of_countypercentage = float(votes_of_county) / float(total_votes) * 100  
+         #Print the county results to the terminal.  
+        county_results = (  
+            f"{county_name}: {vote_of_countypercentage:.1f}% ({votes_of_county:,})\n")  
+        print(county_results)  
+ 
+ ![NV](https://github.com/maddalisushmitha/Election_Analysis/blob/main/Images%20for%20readme/County_Votes_and_Percentages.png)
+ 
+- County with largest number of votes: Denver
+
+### Code:
+
+        #if statement to determine the winning county and get its vote count.  
+        if (votes_of_county > winning_county_count):   
+            winning_county_count = votes_of_county  
+            winning_county = county_name  
+            
+![L](https://github.com/maddalisushmitha/Election_Analysis/blob/main/Images%20for%20readme/Largest_County_Votes.png)
+
+- Number of votes and the percentage of the total votes each candidate received
+
+### Code:
+
+   # Save the final candidate vote count to the text file.  
+    for candidate_name in candidate_votes:  
+        # Retrieve vote count and percentage  
+        votes = candidate_votes.get(candidate_name)  
+        vote_percentage = float(votes) / float(total_votes) * 100  
+        
+![C](https://github.com/maddalisushmitha/Election_Analysis/blob/main/Images%20for%20readme/Candidate_Votes.png)
+
+- Candidate that won the election
+
+### Code
+
+        # Determine winning vote count, winning percentage, and candidate.  
+        if (votes > winning_count) and (vote_percentage > winning_percentage):  
+            winning_count = votes  
+            winning_candidate = candidate_name  
+            winning_percentage = vote_percentage  
+            
+![W](https://github.com/maddalisushmitha/Election_Analysis/blob/main/Images%20for%20readme/Winning_candidate.png)
+
+## Election-Audit Summary:
+
+
+
+
+
+
+
+
+
+
+
