@@ -68,8 +68,18 @@ Analyzing data received from Colorado Board of employee Tom on congressional ele
 ![W](https://github.com/maddalisushmitha/Election_Analysis/blob/main/Images%20for%20readme/Winning_candidate.png)
 
 ## Election-Audit Summary:
+- This script can be used for an election with
+1.  This code can be leveraged for any number of other county elections with different candidates to assess the voting percentage and winning candidate. Code doesn't hard code county or candidate name, so it can be used directly with new data values without modifications to the code.
 
+### Code
+# Candidate Options and candidate votes.  
+candidate_options = []  
+candidate_votes = {}  
+#Creating a county list and county votes dictionary to store votes and names of county.  
+county_options = []  
+county_votes = {}  
 
+2. This code can be even leveraged not just for county level elections but for state, national, presidential elections to understand winning candidate
 
 
 
