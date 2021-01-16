@@ -36,10 +36,10 @@ Analyzing data received from Colorado Board of employee Tom on congressional ele
 
 ### Code:
 
-        #if statement to determine the winning county and get its vote count.  
-        if (votes_of_county > winning_county_count):   
-            winning_county_count = votes_of_county  
-            winning_county = county_name  
+   #if statement to determine the winning county and get its vote count.  
+   if (votes_of_county > winning_county_count):   
+       winning_county_count = votes_of_county  
+       winning_county = county_name  
             
 ![L](https://github.com/maddalisushmitha/Election_Analysis/blob/main/Images%20for%20readme/Largest_County_Votes.png)
 
@@ -59,11 +59,11 @@ Analyzing data received from Colorado Board of employee Tom on congressional ele
 
 ### Code
 
-        # Determine winning vote count, winning percentage, and candidate.  
-        if (votes > winning_count) and (vote_percentage > winning_percentage):  
-            winning_count = votes  
-            winning_candidate = candidate_name  
-            winning_percentage = vote_percentage  
+   # Determine winning vote count, winning percentage, and candidate.  
+   if (votes > winning_count) and (vote_percentage > winning_percentage):  
+       winning_count = votes  
+       winning_candidate = candidate_name  
+       winning_percentage = vote_percentage  
             
 ![W](https://github.com/maddalisushmitha/Election_Analysis/blob/main/Images%20for%20readme/Winning_candidate.png)
 
