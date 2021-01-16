@@ -18,16 +18,17 @@ Analyzing data received from Colorado Board of employee Tom on congressional ele
 - Number of votes and the percentage of total votes for each county
 
 ### Code:
-     #for loop to get the county from the county dictionary.  
-      for county_name in county_votes:  
-        #Retrieve the county vote count.  
-        votes_of_county = county_votes.get(county_name)  
-        #Calculate the percentage of votes for the county.  
-        vote_of_countypercentage = float(votes_of_county) / float(total_votes) * 100  
-         #Print the county results to the terminal.  
-        county_results = (  
-            f"{county_name}: {vote_of_countypercentage:.1f}% ({votes_of_county:,})\n")  
-        print(county_results)  
+
+  #for loop to get the county from the county dictionary.  
+  for county_name in county_votes:  
+  #Retrieve the county vote count.  
+  votes_of_county = county_votes.get(county_name)  
+  #Calculate the percentage of votes for the county.  
+  vote_of_countypercentage = float(votes_of_county) / float(total_votes) * 100  
+   #Print the county results to the terminal.  
+  county_results = (  
+      f"{county_name}: {vote_of_countypercentage:.1f}% ({votes_of_county:,})\n")  
+  print(county_results)  
  
  ![NV](https://github.com/maddalisushmitha/Election_Analysis/blob/main/Images%20for%20readme/County_Votes_and_Percentages.png)
  
